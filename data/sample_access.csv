@@ -1,0 +1,251 @@
+employee_id,employee_name,role,department,app,permission_count,sensitive_access_count,inactive_days,off_hours_access_count,failed_logins_7d,role_mismatch,is_injected_risk,risk_label
+emp_0001,Emp 0001,marketing,Security,Google Workspace,5,0,9,1,0,0,False,Low
+emp_0002,Emp 0002,finance,Engineering,Slack,9,0,10,2,0,0,False,Low
+emp_0003,Emp 0003,hr,Security,AWS Console,5,2,20,4,0,0,False,Low
+emp_0004,Emp 0004,security,Finance,Google Workspace,18,4,0,4,0,0,False,Low
+emp_0005,Emp 0005,hr,Engineering,GitHub,7,0,20,4,0,0,False,Low
+emp_0006,Emp 0006,hr,Engineering,Google Workspace,6,0,30,1,0,0,False,Low
+emp_0007,Emp 0007,intern,Support,Google Workspace,4,0,11,3,0,0,False,Low
+emp_0008,Emp 0008,analyst,Engineering,Slack,8,0,14,1,0,0,False,Low
+emp_0009,Emp 0009,marketing,Engineering,Google Workspace,4,0,4,0,0,0,False,Low
+emp_0010,Emp 0010,admin,Support,Google Workspace,17,3,16,3,0,0,False,Low
+emp_0011,Emp 0011,support,Marketing,Jira,6,0,4,1,2,0,False,Low
+emp_0012,Emp 0012,hr,Marketing,Google Workspace,7,0,1,1,0,0,False,Low
+emp_0013,Emp 0013,hr,Finance,Google Workspace,6,3,40,2,0,0,False,Low
+emp_0014,Emp 0014,hr,HR,Google Workspace,4,0,20,0,0,0,False,Low
+emp_0015,Emp 0015,engineer,Security,AWS Console,12,0,11,1,0,0,False,Low
+emp_0016,Emp 0016,security,Marketing,Google Workspace,20,3,8,1,1,0,False,Low
+emp_0017,Emp 0017,engineer,Finance,Slack,15,2,2,2,0,0,False,Low
+emp_0018,Emp 0018,finance,Marketing,Google Workspace,7,0,5,2,1,0,False,Low
+emp_0019,Emp 0019,security,HR,GitHub,14,1,14,4,1,0,False,Low
+emp_0020,Emp 0020,intern,Marketing,Jira,11,2,36,1,1,0,True,High
+emp_0021,Emp 0021,marketing,Support,GitHub,4,1,31,1,0,0,False,Low
+emp_0022,Emp 0022,analyst,Finance,Google Workspace,21,4,1,3,1,0,True,High
+emp_0023,Emp 0023,marketing,HR,Jira,4,0,12,4,0,0,False,Low
+emp_0024,Emp 0024,analyst,HR,Jira,8,1,30,5,0,0,False,Low
+emp_0025,Emp 0025,analyst,Finance,Jira,7,0,29,3,0,0,False,Low
+emp_0026,Emp 0026,support,Marketing,GitHub,4,0,4,3,0,0,False,Low
+emp_0027,Emp 0027,hr,Marketing,AWS Console,6,3,7,1,0,0,False,Low
+emp_0028,Emp 0028,analyst,Finance,AWS Console,6,1,1,1,0,0,False,Low
+emp_0029,Emp 0029,analyst,HR,Slack,8,2,2,2,0,0,False,Low
+emp_0030,Emp 0030,security,Finance,Google Workspace,22,4,0,2,1,0,False,Low
+emp_0031,Emp 0031,manager,Marketing,Jira,7,9,167,0,0,0,True,High
+emp_0032,Emp 0032,finance,Security,Google Workspace,7,1,3,2,0,0,False,Low
+emp_0033,Emp 0033,finance,Marketing,Slack,6,0,5,4,1,0,False,Low
+emp_0034,Emp 0034,admin,Finance,Jira,19,4,6,2,1,0,False,Low
+emp_0035,Emp 0035,support,HR,Slack,7,2,23,1,1,0,False,Low
+emp_0036,Emp 0036,engineer,Marketing,Slack,10,0,11,1,1,0,False,Low
+emp_0037,Emp 0037,analyst,HR,GitHub,5,2,31,4,0,0,False,Low
+emp_0038,Emp 0038,finance,Security,GitHub,7,2,19,4,0,0,False,Low
+emp_0039,Emp 0039,finance,Finance,Google Workspace,7,2,36,4,0,0,False,Low
+emp_0040,Emp 0040,analyst,Engineering,Google Workspace,9,2,4,0,1,0,False,Low
+emp_0041,Emp 0041,analyst,Engineering,AWS Console,7,1,8,2,0,0,False,Low
+emp_0042,Emp 0042,finance,Engineering,Google Workspace,7,1,3,4,2,0,False,Low
+emp_0043,Emp 0043,hr,Engineering,Slack,6,0,8,3,0,0,False,Low
+emp_0044,Emp 0044,security,Engineering,GitHub,20,0,92,2,2,0,False,Low
+emp_0045,Emp 0045,security,Security,Jira,17,5,32,1,1,0,False,Low
+emp_0046,Emp 0046,security,Engineering,Google Workspace,20,6,7,0,1,0,False,Low
+emp_0047,Emp 0047,manager,Support,AWS Console,11,1,10,4,38,0,True,Medium
+emp_0048,Emp 0048,finance,Finance,AWS Console,8,0,17,1,0,0,False,Low
+emp_0049,Emp 0049,finance,Support,AWS Console,9,1,0,1,1,0,False,Low
+emp_0050,Emp 0050,support,Marketing,GitHub,4,0,12,0,0,0,False,Low
+emp_0051,Emp 0051,intern,Marketing,AWS Console,4,0,0,3,1,0,False,Low
+emp_0052,Emp 0052,analyst,Marketing,AWS Console,11,1,34,5,1,0,False,Low
+emp_0053,Emp 0053,hr,Engineering,GitHub,6,2,1,1,0,0,False,Low
+emp_0054,Emp 0054,marketing,Finance,GitHub,4,0,60,1,0,0,False,Low
+emp_0055,Emp 0055,marketing,Security,GitHub,2,0,6,3,0,0,False,Low
+emp_0056,Emp 0056,hr,Finance,Slack,6,0,3,4,0,0,False,Low
+emp_0057,Emp 0057,finance,Support,Google Workspace,8,1,17,1,0,0,False,Low
+emp_0058,Emp 0058,manager,Support,Jira,7,2,4,2,0,0,False,Low
+emp_0059,Emp 0059,engineer,Support,Jira,12,2,37,1,0,0,False,Low
+emp_0060,Emp 0060,marketing,HR,Jira,5,1,22,5,0,0,False,Low
+emp_0061,Emp 0061,admin,Support,AWS Console,17,3,38,1,0,0,False,Low
+emp_0062,Emp 0062,admin,Finance,Google Workspace,18,4,4,1,0,0,False,Low
+emp_0063,Emp 0063,engineer,Finance,Slack,12,0,10,7,1,0,False,Low
+emp_0064,Emp 0064,hr,HR,Jira,7,0,11,3,0,0,False,Low
+emp_0065,Emp 0065,hr,HR,Slack,5,2,60,3,0,0,False,Low
+emp_0066,Emp 0066,finance,Security,Google Workspace,7,2,26,0,0,0,False,Low
+emp_0067,Emp 0067,support,Support,Slack,4,1,49,2,0,0,False,Low
+emp_0068,Emp 0068,analyst,HR,Google Workspace,8,2,14,0,0,0,False,Low
+emp_0069,Emp 0069,security,Security,Jira,21,2,21,2,0,0,False,Low
+emp_0070,Emp 0070,intern,Marketing,GitHub,3,0,0,4,0,0,False,Low
+emp_0071,Emp 0071,manager,HR,GitHub,10,0,6,2,0,0,False,Low
+emp_0072,Emp 0072,engineer,Engineering,Google Workspace,12,1,32,3,0,0,False,Low
+emp_0073,Emp 0073,manager,Support,Google Workspace,9,0,12,5,0,0,False,Low
+emp_0074,Emp 0074,manager,Finance,GitHub,13,2,3,4,2,0,False,Low
+emp_0075,Emp 0075,analyst,Marketing,GitHub,8,3,24,3,1,0,False,Low
+emp_0076,Emp 0076,manager,Engineering,GitHub,8,0,6,1,0,0,False,Low
+emp_0077,Emp 0077,manager,HR,Google Workspace,11,0,7,1,0,0,False,Low
+emp_0078,Emp 0078,analyst,Engineering,Google Workspace,6,1,7,2,2,0,False,Low
+emp_0079,Emp 0079,analyst,Finance,Google Workspace,5,0,8,1,1,0,False,Low
+emp_0080,Emp 0080,intern,Marketing,Jira,4,1,10,1,0,0,False,Low
+emp_0081,Emp 0081,marketing,Security,GitHub,3,0,0,3,1,0,False,Low
+emp_0082,Emp 0082,intern,Engineering,Jira,3,0,29,3,1,0,False,Low
+emp_0083,Emp 0083,marketing,HR,Slack,5,2,7,1,0,0,False,Low
+emp_0084,Emp 0084,marketing,Marketing,Google Workspace,4,0,37,3,0,0,False,Low
+emp_0085,Emp 0085,engineer,Security,GitHub,10,2,1,1,0,0,False,Low
+emp_0086,Emp 0086,finance,Support,AWS Console,7,1,23,2,0,0,False,Low
+emp_0087,Emp 0087,finance,Marketing,AWS Console,7,1,11,0,0,0,False,Low
+emp_0088,Emp 0088,analyst,Finance,Jira,8,0,53,3,2,0,False,Low
+emp_0089,Emp 0089,security,Support,AWS Console,17,2,14,1,1,0,False,Low
+emp_0090,Emp 0090,analyst,Security,AWS Console,6,0,1,3,2,0,False,Low
+emp_0091,Emp 0091,analyst,Marketing,AWS Console,9,0,21,1,3,0,False,Low
+emp_0092,Emp 0092,engineer,Finance,AWS Console,11,5,2,3,1,0,False,Low
+emp_0093,Emp 0093,marketing,Marketing,AWS Console,5,0,25,1,0,0,False,Low
+emp_0094,Emp 0094,marketing,Engineering,Google Workspace,5,0,3,0,2,0,False,Low
+emp_0095,Emp 0095,analyst,Marketing,Google Workspace,6,0,26,1,0,0,False,Low
+emp_0096,Emp 0096,engineer,Support,Google Workspace,8,0,13,7,0,0,False,Low
+emp_0097,Emp 0097,hr,Support,Google Workspace,5,0,11,2,0,0,False,Low
+emp_0098,Emp 0098,intern,Engineering,GitHub,3,0,8,2,1,0,False,Low
+emp_0099,Emp 0099,security,HR,Jira,51,8,2,2,0,0,True,High
+emp_0100,Emp 0100,intern,Engineering,Jira,4,10,137,0,3,0,True,High
+emp_0101,Emp 0101,intern,Security,AWS Console,4,0,29,1,0,0,False,Low
+emp_0102,Emp 0102,analyst,Finance,Jira,9,1,9,2,0,0,False,Low
+emp_0103,Emp 0103,engineer,HR,GitHub,6,2,23,1,1,0,False,Low
+emp_0104,Emp 0104,finance,Engineering,Jira,6,4,6,3,1,0,False,Low
+emp_0105,Emp 0105,admin,HR,Jira,19,2,7,0,0,0,False,Low
+emp_0106,Emp 0106,marketing,HR,AWS Console,5,0,45,3,1,0,False,Low
+emp_0107,Emp 0107,admin,HR,GitHub,22,4,1,5,0,0,False,Low
+emp_0108,Emp 0108,admin,Support,Slack,23,3,23,4,0,0,False,Low
+emp_0109,Emp 0109,admin,Security,AWS Console,21,4,11,3,0,0,False,Low
+emp_0110,Emp 0110,security,Finance,GitHub,13,2,9,0,18,0,True,Medium
+emp_0111,Emp 0111,manager,Finance,Google Workspace,10,2,9,3,1,0,False,Low
+emp_0112,Emp 0112,hr,Security,Jira,6,0,1,3,2,0,False,Low
+emp_0113,Emp 0113,security,HR,Slack,18,2,4,8,0,0,False,Low
+emp_0114,Emp 0114,intern,HR,Slack,4,0,24,1,2,0,False,Low
+emp_0115,Emp 0115,admin,Engineering,GitHub,21,6,7,1,0,0,False,Low
+emp_0116,Emp 0116,admin,Marketing,Jira,17,4,3,3,0,0,False,Low
+emp_0117,Emp 0117,finance,Security,Google Workspace,7,0,2,2,0,0,False,Low
+emp_0118,Emp 0118,manager,Finance,AWS Console,11,2,28,0,2,0,False,Low
+emp_0119,Emp 0119,manager,Marketing,GitHub,10,2,7,4,1,0,False,Low
+emp_0120,Emp 0120,intern,Finance,AWS Console,3,0,45,0,0,0,False,Low
+emp_0121,Emp 0121,admin,HR,Google Workspace,21,4,5,1,1,0,False,Low
+emp_0122,Emp 0122,engineer,Marketing,GitHub,11,0,18,2,0,0,False,Low
+emp_0123,Emp 0123,finance,Security,AWS Console,7,6,157,0,0,0,True,High
+emp_0124,Emp 0124,marketing,Engineering,Google Workspace,15,5,16,2,0,0,True,High
+emp_0125,Emp 0125,support,Support,Jira,4,0,42,2,0,0,False,Low
+emp_0126,Emp 0126,security,Marketing,Jira,22,2,2,2,0,0,False,Low
+emp_0127,Emp 0127,manager,Security,GitHub,8,2,8,2,1,0,False,Low
+emp_0128,Emp 0128,security,Marketing,GitHub,14,3,19,2,0,0,False,Low
+emp_0129,Emp 0129,security,Support,AWS Console,23,6,4,2,0,0,False,Low
+emp_0130,Emp 0130,engineer,Engineering,AWS Console,12,2,17,1,0,0,False,Low
+emp_0131,Emp 0131,finance,Marketing,Google Workspace,7,0,63,1,0,0,False,Low
+emp_0132,Emp 0132,manager,Engineering,GitHub,6,0,24,4,0,0,False,Low
+emp_0133,Emp 0133,engineer,Finance,AWS Console,13,3,11,4,0,0,False,Low
+emp_0134,Emp 0134,support,Security,AWS Console,6,2,5,0,1,0,False,Low
+emp_0135,Emp 0135,finance,Marketing,Slack,8,1,9,2,0,0,False,Low
+emp_0136,Emp 0136,intern,Support,AWS Console,3,1,38,1,0,0,False,Low
+emp_0137,Emp 0137,finance,Engineering,Google Workspace,8,1,5,2,2,0,False,Low
+emp_0138,Emp 0138,analyst,Engineering,Slack,9,3,9,2,0,0,False,Low
+emp_0139,Emp 0139,support,Security,Jira,5,2,33,2,1,0,False,Low
+emp_0140,Emp 0140,finance,Support,Jira,9,2,7,1,0,0,False,Low
+emp_0141,Emp 0141,manager,HR,Google Workspace,7,1,16,3,1,0,False,Low
+emp_0142,Emp 0142,support,Finance,AWS Console,3,0,8,2,2,0,False,Low
+emp_0143,Emp 0143,marketing,Finance,Slack,4,1,17,1,1,0,False,Low
+emp_0144,Emp 0144,security,Security,Slack,18,5,3,1,0,0,False,Low
+emp_0145,Emp 0145,intern,Marketing,GitHub,4,1,12,1,1,0,False,Low
+emp_0146,Emp 0146,engineer,Support,Slack,10,3,0,3,1,0,False,Low
+emp_0147,Emp 0147,finance,Support,Google Workspace,7,0,4,0,1,0,False,Low
+emp_0148,Emp 0148,engineer,Security,AWS Console,11,1,13,1,22,0,True,Medium
+emp_0149,Emp 0149,analyst,Finance,Jira,9,3,3,4,1,0,False,Low
+emp_0150,Emp 0150,admin,HR,Jira,24,5,55,2,0,0,False,Low
+emp_0151,Emp 0151,security,Engineering,GitHub,15,4,30,2,0,0,False,Low
+emp_0152,Emp 0152,security,Finance,Google Workspace,19,3,40,2,0,0,False,Low
+emp_0153,Emp 0153,support,Support,GitHub,5,2,13,2,1,0,False,Low
+emp_0154,Emp 0154,hr,Support,Slack,7,0,4,3,0,0,False,Low
+emp_0155,Emp 0155,support,Marketing,GitHub,7,1,59,1,1,0,False,Low
+emp_0156,Emp 0156,marketing,Support,Slack,4,0,8,3,0,0,False,Low
+emp_0157,Emp 0157,analyst,Support,AWS Console,8,0,3,1,1,0,False,Low
+emp_0158,Emp 0158,intern,Support,Google Workspace,3,1,5,4,0,0,False,Low
+emp_0159,Emp 0159,intern,Marketing,Slack,4,0,7,3,0,0,False,Low
+emp_0160,Emp 0160,finance,Finance,AWS Console,7,3,12,3,1,0,False,Low
+emp_0161,Emp 0161,marketing,Finance,GitHub,5,1,6,2,0,0,False,Low
+emp_0162,Emp 0162,marketing,Marketing,Jira,18,0,4,2,0,0,True,High
+emp_0163,Emp 0163,analyst,Security,Google Workspace,7,0,16,1,0,0,False,Low
+emp_0164,Emp 0164,intern,Security,Google Workspace,3,3,0,0,0,0,False,Low
+emp_0165,Emp 0165,marketing,Finance,Jira,3,1,10,7,0,0,False,Low
+emp_0166,Emp 0166,admin,Security,GitHub,19,0,20,2,1,0,False,Low
+emp_0167,Emp 0167,marketing,Finance,GitHub,3,0,40,2,0,0,False,Low
+emp_0168,Emp 0168,marketing,Security,Slack,4,0,40,1,0,0,False,Low
+emp_0169,Emp 0169,marketing,Engineering,Slack,4,0,14,1,1,0,False,Low
+emp_0170,Emp 0170,support,Support,Jira,6,0,10,1,1,0,False,Low
+emp_0171,Emp 0171,engineer,Marketing,Jira,12,2,13,58,19,0,True,Medium
+emp_0172,Emp 0172,security,Engineering,Google Workspace,17,4,1,2,0,0,False,Low
+emp_0173,Emp 0173,manager,Finance,GitHub,9,0,19,4,1,0,False,Low
+emp_0174,Emp 0174,support,Security,GitHub,7,3,4,1,34,0,True,Medium
+emp_0175,Emp 0175,manager,Support,AWS Console,20,18,5,0,1,1,True,High
+emp_0176,Emp 0176,hr,Marketing,Google Workspace,6,1,6,4,0,0,False,Low
+emp_0177,Emp 0177,engineer,Support,Jira,9,1,36,0,2,0,False,Low
+emp_0178,Emp 0178,support,Marketing,GitHub,5,0,2,2,0,0,False,Low
+emp_0179,Emp 0179,security,Finance,AWS Console,17,5,23,3,1,0,False,Low
+emp_0180,Emp 0180,marketing,Finance,Google Workspace,3,2,22,3,1,0,False,Low
+emp_0181,Emp 0181,marketing,HR,AWS Console,5,13,149,0,1,0,True,High
+emp_0182,Emp 0182,hr,Support,GitHub,4,0,5,1,0,0,False,Low
+emp_0183,Emp 0183,security,Support,Slack,17,4,1,3,1,0,False,Low
+emp_0184,Emp 0184,engineer,HR,AWS Console,11,5,5,0,2,0,False,Low
+emp_0185,Emp 0185,admin,Security,Jira,25,3,19,3,0,0,False,Low
+emp_0186,Emp 0186,finance,Engineering,GitHub,5,1,10,1,0,0,False,Low
+emp_0187,Emp 0187,analyst,Engineering,GitHub,7,4,1,0,1,0,False,Low
+emp_0188,Emp 0188,analyst,Engineering,Slack,29,2,20,3,0,0,True,High
+emp_0189,Emp 0189,analyst,Marketing,GitHub,9,2,4,2,1,0,False,Low
+emp_0190,Emp 0190,marketing,Finance,AWS Console,4,0,18,2,1,0,False,Low
+emp_0191,Emp 0191,hr,Support,GitHub,4,0,43,0,0,0,False,Low
+emp_0192,Emp 0192,engineer,Marketing,AWS Console,13,1,39,2,1,0,False,Low
+emp_0193,Emp 0193,engineer,HR,AWS Console,14,2,10,3,0,0,False,Low
+emp_0194,Emp 0194,hr,Marketing,AWS Console,6,3,16,1,0,0,False,Low
+emp_0195,Emp 0195,support,Engineering,GitHub,5,1,59,1,0,0,False,Low
+emp_0196,Emp 0196,support,Engineering,GitHub,5,1,8,3,1,0,False,Low
+emp_0197,Emp 0197,support,Engineering,Slack,6,0,8,1,39,0,True,Medium
+emp_0198,Emp 0198,finance,Engineering,Jira,7,1,20,2,1,0,False,Low
+emp_0199,Emp 0199,support,Marketing,Google Workspace,5,0,38,1,0,0,False,Low
+emp_0200,Emp 0200,support,Engineering,AWS Console,6,1,4,2,0,0,False,Low
+emp_0201,Emp 0201,intern,Finance,AWS Console,3,0,99,1,0,0,False,Low
+emp_0202,Emp 0202,security,Engineering,GitHub,18,3,2,0,0,0,False,Low
+emp_0203,Emp 0203,security,Engineering,GitHub,19,1,19,1,2,0,False,Low
+emp_0204,Emp 0204,security,HR,GitHub,43,11,4,1,1,1,True,High
+emp_0205,Emp 0205,support,Support,AWS Console,7,0,2,2,0,0,False,Low
+emp_0206,Emp 0206,finance,HR,Google Workspace,7,0,29,0,0,0,False,Low
+emp_0207,Emp 0207,hr,HR,Slack,4,0,12,2,2,0,False,Low
+emp_0208,Emp 0208,hr,Support,AWS Console,6,0,0,5,1,0,False,Low
+emp_0209,Emp 0209,engineer,Support,Slack,10,3,5,1,2,0,False,Low
+emp_0210,Emp 0210,marketing,HR,AWS Console,4,0,1,1,0,0,False,Low
+emp_0211,Emp 0211,admin,HR,Jira,23,1,5,2,1,0,False,Low
+emp_0212,Emp 0212,analyst,Finance,GitHub,5,1,1,2,0,0,False,Low
+emp_0213,Emp 0213,hr,Security,Slack,6,0,27,4,0,0,False,Low
+emp_0214,Emp 0214,admin,Support,Slack,19,3,7,0,0,0,False,Low
+emp_0215,Emp 0215,intern,Marketing,GitHub,3,1,5,1,1,0,False,Low
+emp_0216,Emp 0216,admin,HR,Slack,20,6,18,2,0,0,False,Low
+emp_0217,Emp 0217,analyst,Finance,AWS Console,7,1,11,1,2,0,False,Low
+emp_0218,Emp 0218,support,HR,Google Workspace,6,1,22,2,0,0,False,Low
+emp_0219,Emp 0219,marketing,Support,AWS Console,5,0,26,0,0,0,False,Low
+emp_0220,Emp 0220,analyst,Support,AWS Console,6,4,12,0,0,0,False,Low
+emp_0221,Emp 0221,admin,Security,Jira,20,3,5,4,0,0,False,Low
+emp_0222,Emp 0222,marketing,Support,GitHub,5,0,6,2,0,0,False,Low
+emp_0223,Emp 0223,intern,Finance,GitHub,4,1,6,1,0,0,False,Low
+emp_0224,Emp 0224,finance,Marketing,AWS Console,9,0,4,2,1,0,False,Low
+emp_0225,Emp 0225,admin,Security,GitHub,16,5,4,1,2,0,False,Low
+emp_0226,Emp 0226,analyst,Security,AWS Console,6,4,2,2,1,0,False,Low
+emp_0227,Emp 0227,marketing,Engineering,Jira,4,0,3,1,0,0,False,Low
+emp_0228,Emp 0228,admin,Finance,Google Workspace,19,4,13,1,0,0,False,Low
+emp_0229,Emp 0229,analyst,Finance,Google Workspace,8,3,16,2,1,0,False,Low
+emp_0230,Emp 0230,marketing,Support,AWS Console,12,8,23,2,2,1,True,High
+emp_0231,Emp 0231,hr,Security,Slack,7,0,5,1,0,0,False,Low
+emp_0232,Emp 0232,marketing,HR,AWS Console,5,1,8,3,0,0,False,Low
+emp_0233,Emp 0233,marketing,HR,GitHub,5,0,3,2,1,0,False,Low
+emp_0234,Emp 0234,intern,Security,Jira,3,1,49,1,0,0,False,Low
+emp_0235,Emp 0235,manager,Security,Google Workspace,9,1,6,70,8,0,True,Medium
+emp_0236,Emp 0236,finance,HR,Google Workspace,7,0,77,2,0,0,False,Low
+emp_0237,Emp 0237,manager,Marketing,Slack,8,1,3,5,0,0,False,Low
+emp_0238,Emp 0238,finance,Support,Slack,6,0,32,1,1,0,False,Low
+emp_0239,Emp 0239,support,Marketing,Slack,6,2,7,2,3,0,False,Low
+emp_0240,Emp 0240,security,Finance,Jira,19,7,107,0,0,0,True,High
+emp_0241,Emp 0241,admin,HR,Google Workspace,17,3,44,3,2,0,False,Low
+emp_0242,Emp 0242,admin,Security,AWS Console,22,5,3,0,0,0,False,Low
+emp_0243,Emp 0243,engineer,Engineering,Slack,11,1,30,5,0,0,False,Low
+emp_0244,Emp 0244,marketing,Security,Google Workspace,6,1,6,1,1,0,False,Low
+showcase_high_001,Jordan Blake,marketing,Marketing,AWS Console,38,22,5,4,1,1,True,High
+showcase_high_002,Priya Sharma,intern,Engineering,GitHub,45,18,0,12,3,1,True,High
+showcase_med_001,Carlos Rivera,analyst,Finance,Jira,9,7,120,0,0,0,True,Medium
+showcase_med_002,Amara Osei,engineer,Engineering,Slack,13,3,2,55,11,0,True,Medium
+showcase_low_001,Sam Chen,engineer,Engineering,GitHub,12,2,3,1,0,0,False,Low
+showcase_low_002,Maria Dos Santos,hr,HR,Google Workspace,6,1,7,0,0,0,False,Low
