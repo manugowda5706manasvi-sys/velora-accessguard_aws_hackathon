@@ -4,7 +4,11 @@
  * and unified error parsing.
  */
 
-const BASE_URL = import.meta.env.VITE_API_URL || '';
+let rawBase = (import.meta.env.VITE_API_URL || '').trim();
+if (rawBase && !rawBase.startsWith('http://') && !rawBase.startsWith('https://')) {
+  rawBase = `https://${rawBase}`;
+}
+const BASE_URL = rawBase.replace(/\/+$/, '');
 const API_BASE = `${BASE_URL}/api`;
 
 export const getStoredToken = () => localStorage.getItem('accessguard_token');
