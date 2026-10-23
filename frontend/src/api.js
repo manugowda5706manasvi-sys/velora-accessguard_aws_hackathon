@@ -4,7 +4,8 @@
  * and unified error parsing.
  */
 
-const API_BASE = '/api';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE = `${BASE_URL}/api`;
 
 export const getStoredToken = () => localStorage.getItem('accessguard_token');
 export const setStoredToken = (token) => localStorage.setItem('accessguard_token', token);
@@ -59,7 +60,7 @@ async function request(endpoint, options = {}) {
 
 export const api = {
   // Public
-  getHealth: () => fetch('/health').then((r) => r.json()),
+  getHealth: () => fetch(`${BASE_URL}/health`).then((r) => r.json()),
 
   // Auth
   login: (username, password) =>
