@@ -4,7 +4,7 @@ import { api, setStoredToken } from '../api';
 
 export default function LoginModal({ isOpen, onClose, onLoginSuccess }) {
   const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('DemoAdmin2026!');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 

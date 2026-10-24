@@ -4,44 +4,28 @@ import {
   LayoutDashboard,
   Users,
   ShieldCheck,
-  UploadCloud,
   Server,
   LogOut,
   LogIn,
   RefreshCw,
   Lock,
+  UserSearch,
 } from 'lucide-react';
-import { api, getStoredToken, removeStoredToken, setStoredToken } from './api';
+import { api, getStoredToken, removeStoredToken } from './api';
 import Overview from './pages/Overview';
 import EmployeeTable from './pages/EmployeeTable';
+import EmployeeRiskScanner from './pages/EmployeeRiskScanner';
 import ReviewQueue from './pages/ReviewQueue';
-import UploadData from './pages/UploadData';
 import SystemStatus from './pages/SystemStatus';
 import LoginModal from './components/LoginModal';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState('scanner');
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(!!getStoredToken());
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [selectedEmployeeId, setSelectedEmployeeId] = useState(null);
-
-  // Auto-login demo admin if not logged in (to ensure seamless local hackathon demo experience)
-  const initAuth = async () => {
-    if (!getStoredToken()) {
-      try {
-        const res = await api.login('admin', 'DemoAdmin2026!');
-        setStoredToken(res.access_token);
-        setIsLoggedIn(true);
-      } catch (e) {
-        // Fall back to opening modal if default credentials differ
-        setShowLoginModal(true);
-      }
-    } else {
-      setIsLoggedIn(true);
-    }
-  };
 
   const loadStats = async () => {
     setLoading(true);
@@ -56,10 +40,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    initAuth().then(() => {
-      loadStats();
-    });
-
     const handleAuthRequired = () => {
       setIsLoggedIn(false);
       setShowLoginModal(true);
@@ -68,6 +48,12 @@ export default function App() {
     window.addEventListener('auth_required', handleAuthRequired);
     return () => window.removeEventListener('auth_required', handleAuthRequired);
   }, []);
+
+  useEffect(() => {
+    if (activeTab === 'overview') {
+      loadStats();
+    }
+  }, [activeTab]);
 
   const handleLogout = () => {
     removeStoredToken();
@@ -104,6 +90,14 @@ export default function App() {
           </button>
 
           <button
+            onClick={() => { setActiveTab('scanner'); setSelectedEmployeeId(null); }}
+            className={`nav-item ${activeTab === 'scanner' ? 'active' : ''}`}
+          >
+            <UserSearch size={18} />
+            <span>Employee Risk Scanner</span>
+          </button>
+
+          <button
             onClick={() => setActiveTab('employees')}
             className={`nav-item ${activeTab === 'employees' ? 'active' : ''}`}
           >
@@ -120,14 +114,6 @@ export default function App() {
           </button>
 
           <button
-            onClick={() => { setActiveTab('upload'); setSelectedEmployeeId(null); }}
-            className={`nav-item ${activeTab === 'upload' ? 'active' : ''}`}
-          >
-            <UploadCloud size={18} />
-            <span>Upload Data</span>
-          </button>
-
-          <button
             onClick={() => { setActiveTab('status'); setSelectedEmployeeId(null); }}
             className={`nav-item ${activeTab === 'status' ? 'active' : ''}`}
           >
@@ -138,8 +124,8 @@ export default function App() {
 
         <div className="sidebar-footer">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-            <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#10b981' }} />
-            <span>Backend: Connected</span>
+            <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#f59e0b' }} />
+            <span>Access source: Synthetic demo</span>
           </div>
           <div style={{ color: 'var(--text-muted)', fontSize: '11px' }}>
             v1.0.0 • IMPULSE '26 Hackathon
@@ -152,21 +138,23 @@ export default function App() {
         <header className="top-bar">
           <div className="page-title">
             {activeTab === 'overview' && 'SaaS Access Risk Dashboard'}
+            {activeTab === 'scanner' && 'Employee Risk Scanner — SaaS Access & Privilege Drift'}
             {activeTab === 'employees' && 'Consented SaaS Employee Access Table'}
             {activeTab === 'review' && 'Tamper-Evident Audit & Review Workflow'}
-            {activeTab === 'upload' && 'Upload Access Permissions CSV'}
             {activeTab === 'status' && 'Operational Transparency & Architecture'}
           </div>
 
           <div className="top-actions">
-            <button
-              onClick={loadStats}
-              title="Refresh intelligence"
-              className="btn btn-secondary btn-sm"
-            >
-              <RefreshCw size={14} className={loading ? 'spin' : ''} />
-              <span>Refresh</span>
-            </button>
+            {activeTab === 'overview' && (
+              <button
+                onClick={loadStats}
+                title="Refresh intelligence"
+                className="btn btn-secondary btn-sm"
+              >
+                <RefreshCw size={14} className={loading ? 'spin' : ''} />
+                <span>Refresh</span>
+              </button>
+            )}
 
             {isLoggedIn ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -204,6 +192,10 @@ export default function App() {
             />
           )}
 
+          {activeTab === 'scanner' && (
+            <EmployeeRiskScanner />
+          )}
+
           {activeTab === 'employees' && (
             <EmployeeTable
               selectedEmployeeId={selectedEmployeeId}
@@ -215,13 +207,6 @@ export default function App() {
           {activeTab === 'review' && (
             <ReviewQueue
               onSelectRecord={handleSelectRecordFromAlert}
-            />
-          )}
-
-          {activeTab === 'upload' && (
-            <UploadData
-              onUploadSuccess={loadStats}
-              onNavigate={(tab) => setActiveTab(tab)}
             />
           )}
 

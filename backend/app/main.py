@@ -12,6 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from mangum import Mangum
 
 from backend.app.api.routes import router as api_router, _process_and_store_df
+from backend.app.api.scanner import scanner_router
 from backend.app.config import get_settings
 from backend.app.ml.validator import validate_csv
 from backend.app.storage.base import get_storage
@@ -87,6 +88,8 @@ async def add_security_headers(request: Request, call_next):
 # Both root and /api prefixes for flexibility with frontend & cloud deployments
 app.include_router(api_router, prefix="/api")
 app.include_router(api_router)
+app.include_router(scanner_router, prefix="/api")
+app.include_router(scanner_router)
 
 
 # ── AWS Lambda Handler ────────────────────────────────────────────────────────

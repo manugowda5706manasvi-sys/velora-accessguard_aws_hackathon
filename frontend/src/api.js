@@ -62,6 +62,16 @@ async function request(endpoint, options = {}) {
   return response.json();
 }
 
+async function scannerRequest(endpoint) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
+  try {
+    return await request(endpoint, { signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export const api = {
   // Public
   getHealth: () => fetch(`${BASE_URL}/health`).then((r) => r.json()),
@@ -121,4 +131,9 @@ export const api = {
 
   // System Status
   getSystemStatus: () => request('/system/status'),
+
+  // Employee Risk Scanner
+  getScannerSuggestions: () => scannerRequest('/scanner/suggestions'),
+  scanEmployee: (idOrName) =>
+    scannerRequest(`/scanner/employees?query=${encodeURIComponent(idOrName)}`),
 };
